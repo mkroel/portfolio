@@ -1,0 +1,268 @@
+@import url(../../Styles/Overlay.css);
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20%;
+
+    background-image: url(https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1061&q=80);
+    height: 480px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: #4b38306c;
+}
+
+.header h1 {
+    font-size: 96px;
+    letter-spacing: 9px;
+    margin-bottom: 24px;
+    color: var(--white);
+}
+.header h2 {
+    margin-top: -50px;
+    line-height: 25px;
+    color: var(--white)
+}
+
+h1, h2 {
+    margin-left: 15px;
+}
+
+h2 {
+    color: var(--bgray);
+}
+
+.selection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 42px;
+
+    margin-bottom: 2%;
+}
+
+#shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2% 0;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+
+    width: 200px;
+    height: 300px;
+
+    text-decoration: none;
+    color: var(--black);
+    background: var(--white);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 35px;
+}
+
+.cards h3 {
+    font-size: 16px;
+}
+
+.wrapper {
+    position: relative;
+    width: 220px;
+    height: 250px;
+    top: -10px;
+    background-color: var(--wrapperbackground);
+
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 35px 35px 0px 0px;
+}
+
+.img {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 15px 0;
+    height: 200px;
+
+    transition: all 250ms ease-out;
+}
+
+.img.img1,
+.img.img5 {
+    background-image: url("https://rauwolf-coffee.at/media/image/50/7e/22/no_2001_munsatia_herbarius_2__600x600.webp");
+}
+.img.img2,
+.img.img6 {
+    background-image: url("https://rauwolf-coffee.at/media/image/34/db/46/250g_3005_LRINTpUgC2HKWdF_600x600.webp");
+}
+.img.img3,
+.img.img7 {
+    background-image: url("https://rauwolf-coffee.at/media/image/e3/03/d5/250g_3004_LRuYOXHpXTG2FAt_600x600.webp");
+}
+.img.img4,
+.img.img8 {
+    background-image: url("https://rauwolf-coffee.at/media/image/f3/5e/73/250g_3003_LR2ga3NJlF47zXg_600x600.webp");
+}
+.img.img9 {
+    background-image: url("https://rauwolf-coffee.at/media/image/3c/5f/dc/no_1001_theobroma_amygdalum_600x600.webp");
+}
+.img.img10 {
+    background-image: url("https://rauwolf-coffee.at/media/image/ec/79/7e/no_1002_italus_robustus_2_.webp");
+}
+.img.img11 {
+    background-image: url("https://rauwolf-coffee.at/media/image/06/7b/41/250g_3007_DR_600x600.webp");
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+
+    width: 100%;
+    height: 112px;
+    max-height: 112px;
+}
+
+.price {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--price);
+}
+
+.cards:hover {
+    background-position: center center;
+}
+
+.cards:hover .img {
+    background-size: cover;
+    margin: 0;
+    height: 220px;
+}
+
+.cards:hover .img1,
+.cards:hover .img2,
+.cards:hover .img3,
+.cards:hover .img4 {
+    background-image: url(https://images.unsplash.com/photo-1596098823457-74e360fcd023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNvZmZlZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    transition: all 128ms ease-out;
+}
+
+.cards:hover .img5,
+.cards:hover .img6,
+.cards:hover .img7,
+.cards:hover .img8 {
+    background-image: url(https://images.unsplash.com/photo-1582726457394-afe6407d0996?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGNvZmZlZSUyMGJlYW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    transition: all 250ms ease-out;
+}
+
+.cards:hover .img9,
+.cards:hover .img10,
+.cards:hover .img11 {
+    background-image: url(https://images.unsplash.com/photo-1579992357154-faf4bde95b3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZXNwcmVzc298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    transition: all 250ms ease-out;
+}
+
+.cards:hover {
+    cursor: pointer;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.FAQ {
+    margin-bottom: 5%;
+}
+
+.FAQ h1, .FAQ h2, h4 {
+    text-align: center;
+}
+
+.FAQ h2 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--bgray);
+}
+
+.questions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.questions .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3%;
+    gap: 30px;
+}
+
+/* Stats */
+
+.statistics h1 {
+    text-align: center;
+}
+
+.statistics h2 {
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--accent);
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.stats p {
+    text-align: center;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 24px 16px;
+    margin: 2%;
+    width: 20%;
+    
+    box-sizing: border-box;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background: var(--white);
+    border: 2px solid #D6DCE0;
+}
+
+.stats div:hover {
+    transition: all 250ms ease-out;
+    transform: scale(1.03);
+    cursor: pointer;
+}

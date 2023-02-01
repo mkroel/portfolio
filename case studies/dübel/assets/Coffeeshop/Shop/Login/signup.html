@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <link href="stylesu.css" rel="stylesheet">
+        <link href="../../Styles/Images/icons/Vectorlogo.png" rel="icon">
+        <title>Registrieren | Zum Dübel</title>
+    </head>
+    <body>
+        <nav id="top">
+            <div class="title">
+                <a href="../../Index.html"><img class="logo" src="../../Styles/Images/icons/Vectorloading.svg" alt="logo"></a>
+                <div class="nav-links">
+                    <a href="../../Index.html">Startseite</a>
+                    <a href="../../History/index.html">Unternehmen</a>
+                    <a href="#" class="dropbtn" onclick="myFunction()">Café</a>
+                      <div class="dropdown-content" id="myDropdown">
+                        <a href="../../Café/index.html">Start</a>
+                        <a href="../../Café/Speisekarte/index.html">Speisen</a>
+                        <a href="../../Café/Getränkekarte/index.html">Getränke</a>
+                      </div>
+                    <a href="../index.html">Shop</a>
+                </div>
+            </div>
+            <div class="nav-icons">
+                <a href="login.html"><img class="acc-icon" src="../../Styles/Images/icons/profile.png" alt="Kundenprofil"></a>
+                <a href="../shoppingbag.html"><img class="bag" src="../../../Styles/Images/icons/shoppingbag.png" alt="Warenkorb"></a>
+            </div>
+        </nav>
+        <div class="column">
+            <div class="left">
+
+            </div>
+            <div class="right">
+                <div class="form">
+                    <div>
+                        <h1>Erstelle dein Konto</h1>
+                        <h2>Und sicher dir viele Vorteile</h2>
+                    </div>
+                    <button type="submit" class="google failed-g-login">
+                        <img src="../styles/Images/google.png" alt="google Logo">
+                        Login with Google
+                    </button>
+                    <p>Oder</p>
+                    <div class="personal">
+                        <div class="name">
+                            <p>Vorname</p>
+                            <input type="text" autocomplete="name" placeholder="Max">
+                        </div>
+                        <div class="surname">
+                            <p>Nachname</p>
+                            <input type="text" autocomplete="family-name" placeholder="Muster">
+                        </div>
+                    </div>
+                    <div class="email">
+                        <p>Email</p>
+                        <input type="email" placeholder="MaxMuster@gmx.de">
+                    </div>
+                    <div class="password">
+                        <p>Passwort</p>
+                        <input type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" minlength="8">
+                        <a href="#" class="end error">Passwort vergessen?</a>
+                    </div>
+                    <button type="submit" class="login failed-login">Konto erstellen</button>
+                    <a href="login.html">Du hast ein Konto? Melde dich an.</a>
+                </div>
+            </div>
+        </div>
+        <dialog class="modal">
+            <div class="flex">
+                <img src="../styles/Images/erroricon.png" alt="Error">
+                <h1>Ein Fehler ist aufgetreten</h1>
+            </div>
+            <p>Ups, das sollte so nicht sein...
+                <br>Versuch es noch einmal oder melde dich beim Support.
+            </p>
+            <p id="errorcode">Error-Code: #H13r-g3h7-32-n1ch7-w31t3r</p>
+            <button id="start" class="close-button">Erneut versuchen</button>
+            <a href="../../Index.html"><button class="start">Zur Startseite</button></a>
+        </dialog>
+        <footer id="footer">
+            <div class="links">
+                <a href="#!">Impressum</a>
+                <a href="#!">Widerrufsbelehrung</a>
+                <a href="#!">Datenschutzerklärung</a>
+                <a href="#!">AGB</a>
+            </div>
+            <div class="socials">
+                <a href="#!">
+                    <img src="../../Styles/Images/icons/twitter.png" alt="twitter">
+                </a>
+                <a href="#!">
+                    <img src="../../styles/Images/icons/facebook.png" alt="facebook">
+                </a>
+                <a href="#!">
+                    <img src="../../styles/Images/icons/instagram.png" alt="instagram">
+                </a>
+                <a href="#!">
+                    <img src="../../styles/Images/icons/youtube.png" alt="Youtube">
+                </a>
+            </div>
+            <p>© 2022 Zum Dübel, Inc. All rights reserved.</p>
+        </footer>
+        <script>
+            function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+                }
+            }
+            }
+
+            // Dialog //
+            const modal = document.querySelector(".modal");
+            const openModal = document.querySelector(".failed-g-login");
+            const openModal1 = document.querySelector(".error");
+            const openModal2 = document.querySelector(".failed-login");
+            const closeModal = document.querySelector(".close-button");
+
+            openModal.addEventListener('click', () => {
+                modal.showModal();
+            });
+            openModal1.addEventListener('click', () => {
+                modal.showModal();
+            });
+            openModal2.addEventListener('click', () => {
+                modal.showModal();
+            });
+            closeModal.addEventListener("click", () => {
+            modal.close();
+            });
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500&display=swap');
+@import url(../styles/overlay.css);
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.thumbnail {
+    width: 242px;
+    height: 290px;
+}
+
+@media screen and (max-width: 1800px) {
+    header img.thumbnail {
+        max-width: 242px;
+        min-width: 144px;
+        height: auto;
+        margin: 1.1em;
+    }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  min-width: 1024px;
+  max-width: 1024px;
+  margin: auto;
+  margin-top: 5px;
+  user-select: none;
+  z-index: 2;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #b3071b;
+}
+
+/* Ab hier folgt mein Code :) */
+
+main {
+    padding: 0;
+    margin: 10px 0 0 0;
+    border-top: 4px #717171 solid;
+}
+
+.news {
+    padding: 10px;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    background-color: #b3071b;
+    font-size: 20px;
+}
+.news a {
+    color: white;
+}
+
+.aktuelles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 76px;
+}
+
+.column {
+    flex: 50%;
+    margin: 4px;
+}
+
+@media screen and (max-width: 1400px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.aktuelles p {
+    font-size: 0.75em;
+    margin-top: 4px;
+}
+
+.termine ul, .overview ul {
+    list-style: none;
+    padding: 0;
+}
+
+hr {
+    border-top: 1px dashed #717171;
+}
+
+h2 {
+    font-family: Raleway;
+    text-transform: uppercase;
+}
+.overview {
+    max-width: fit-content;
+    font-size: 18px;
+    font-family: raleway;
+}
+
+.termine {
+    max-width: 450px;
+    font-size: 20px;
+}
+
+.overview, .termine {
+    margin:0 4%;
+    font-family: Raleway, sans-serif;
+}
+
+div.termine a, div.overview a {
+    text-decoration: none;
+    color: #0c0c0c;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+div.box {
+    position: relative;
+    float: left;
+    width: 110px;
+    height: 20px;
+    margin: 10px 300px 5px 0;
+    font-size: 18px;
+    background-color: #b1081b;
+    color: #ffffff;
+}
+
+.box::after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0;
+    top: 0px;
+    left: 20px;
+    margin-left: 90px;
+    border-style: solid;
+    border-width: 20px 22px 0 0;
+    border-color: #b1081b transparent transparent;
+}
+
+section.awards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.awards img {
+    width: 320px;
+    height: 100%;
+    margin: 10px;
+}
+
+.erasmus {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.awards2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin-top: 10px;
+    background-color: #b3071b;
+}
+
+.awards2 img {
+    margin: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    background: #717171;
+    font-size: small;
+    color: white;
+    padding: 4px 0;
+    margin-right: 100px;
+}
+
+.kontakt ul {
+    list-style: none;
+    margin-right: 100px;
+    line-height: 26px;
+    padding-left: 0;
+}
+
+.column2 {
+    flex: 30%;
+}
+
+.socials li, .socials li a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-family: Raleway;
+    font-size: 12px;
+    padding: 2px
+}
+
+.socials li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Scroll to top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 45px;
+    z-index: 998;
+    border: none;
+    outline: none;
+    background-color: #b3071b;
+    cursor: pointer;
+    padding: 22px;
+    font-size: 20px;
+    border-radius: 100vw;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#myBtn:hover {
+    font-size: 26px;
+    transform: scale(1.2);
+    transition: all 0.1s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.termine li:hover, .overview li:hover{
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 1360px){
+    header .thumbnail {
+        display: none;
+    }
+
+    .slideshow-container {
+        margin-top: 0;
+    }
+}

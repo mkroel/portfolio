@@ -1,0 +1,7 @@
+section.heading video {
+    height: calc(100vh - 123px);
+    width: 100%;
+    aspect-ratio: unset;
+    object-fit: cover;
+    object-position: center;
+}

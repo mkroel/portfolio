@@ -1,0 +1,212 @@
+@import url(../../Styles/Overlay.css);
+
+body {
+    background-image: url(../styles/Images/DübelWall.png);
+    background-color: gray;
+    background-size: cover;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: 0.55fr 0.45fr;
+}
+
+.left {
+    grid-area: 1 / 1 / 6 / 2;
+    background: none;
+}
+.right {
+    grid-area: 1/ 2 / 6 / 3;
+    height: 92vh;
+    right: 0;
+    padding: 5% 2%;
+
+    display: flex;
+    background-color: var(--background);
+    box-shadow: -5px 0px 11px rgba(0, 0, 0, 0.4);
+    border-radius: 38px 0px 0px 38px;
+}
+
+/* ============ form =============== */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 38px;
+    line-height: 2;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.form p:not(.error) {
+    font-family: inter, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+a {
+    font-family: Roboto;
+    font-size: 14px;
+    color: var(--black);
+}
+
+.end {
+    text-align: end;
+}
+
+.google {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 0 6% 0;
+}
+
+.google img {
+    width: 28px;
+    padding-right: 20px;
+}
+
+button.google {
+    padding: 10px;
+    max-height: 42px;
+    width: 50%;
+
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--white);
+    border: 2px var(--black) solid;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+button.google:hover {
+     background-color: rgba(121, 121, 121, 0.247);
+}
+
+div.personal {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 75%;
+    margin-top: 5%;
+}
+
+.personal input {
+    width: 85%;
+}
+
+.name, .surname {
+    width: 50%;
+    margin: 0 10px;
+}
+
+.email, .password{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 10px 0;
+}
+
+.password {
+    margin-bottom: 5%;
+}
+
+input {
+    padding: 6px 4px;
+    max-height: 42px;
+    width: 100%;
+    
+    background-color: var(--white);
+    border: 2px var(--black) solid;
+    border-radius: 5px;
+}
+
+button.login {
+    width: 50%;
+    max-height: 42px;
+    padding: 10px;
+    margin-bottom: 5px;
+
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--white);
+
+    background-color: var(--black);
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+button.login:hover {
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 1em;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}
+
+.modal h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.modal img {
+    width: 28px;
+    height: 28px;
+    margin-right: 6px;
+}
+
+#errorcode {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 42px;
+
+    text-transform: uppercase;
+
+    color: var(--price);
+}
+
+#start {
+    padding: 4px 15px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--bgray);
+}
+.start {
+    padding: 4px 15px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--bgray);
+}
+
+
+@media screen and (max-width: 1280px) {
+    .right {
+       grid-area: 1/1/2/3;
+       border-radius: 0;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Börde Homepage Redesign | Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="../../portfolio/assets/navbar.css">
+</head>
+<body>
+    <header id="top">
+        <nav id="nav_main">
+            <a href="../../portfolio/portfolio.html" id="nav__logo">Marius</p></a>
+            <div>
+                <ul class="nav__container nav__links">
+                    <li><a href="../../portfolio/portfolio.html" class="nav__link">Home</a></li>
+                    <li><a href="../../portfolio/portfolio.html#works" class="nav__link">Works</a></li>
+                        <li><a href="../../portfolio/portfolio.html#collection" class="nav__link">Collection</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="modal" id="modal">
+            <div class="modal-content">
+                <div class="close">
+                    <button onclick="closeModal()">x</button>
+                </div>
+                <h1>Redesign of my school Homepage</h1>
+                <p>Modernized the look and user experience of the school's landing page as part of a school project, focusing on simplicity and ease of navigation.</p>
+                <div class="tip">The page preview is better to watch on a Desktop!</div>
+            </div>
+        </section>
+        <section class="page">
+            <h1>Page preview</h1>
+            <iframe src="assets/Startseite_bbk.html" frameborder="1"></iframe>
+        </section>
+        <section class="product desktop" id="product">
+            <h1>Before and after</h1>
+            <div class="content-wrapper">
+                <div class="slide-wrapper">
+                    <img src="assets/images/Thumbnail.jpg" alt="Official Website">
+                    <img id="afterImg" src="assets/images/OfficialWebsite.jpg" alt="Cloned Website">
+                    <input type="range" name="slider" id="slider" min="0" max="100" value="50" oninput="slider()">
+                </div>
+                <div class="before-after">
+                    <p id="before">Before</p>
+                    <p id="after">After</p>
+                </div>
+            </div>
+        </section>
+        <div class="floating" onclick="toggleModal()">
+            <div class="info">
+                <p><span>[i]</span><span class="desktop">Information</span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>Marius</h4>
+        <a class="scrolltop" href="#top" title="Scroll to top">
+            <img src="../../portfolio/assets/images/icons/keyboard_double_arrow_up.svg" alt="scrolltop">
+        </a>
+    </footer>
+    <script src="../main.js"></script>
+    <script src="../../portfolio/assets/main.js"></script>
+</body>
+</html>

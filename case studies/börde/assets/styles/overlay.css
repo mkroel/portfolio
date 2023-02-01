@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* Put the following Code into the index.html file:
+
+<nav class="header">
+    <a href="https://www.boerde-berufskolleg.de/startseite/"><img class="logo" src="https://d2j6dbq0eux0bg.cloudfront.net/images/40124009/2741007520.jpg"></a>
+    <ul class="nav_link float">
+        <li><a href="../../Startseite_bbk.html">Startseite</a>
+            <li><div class="dropdown">
+                <a class="dropbtn" href="https://www.boerde-berufskolleg.de/bildungsangebote/">Bildungsangebote</a>
+                <div class="dropdown-content">
+                    <a href="#">Berufliche Ausbildung</a>
+                    <a href="#">Schulische Ausbildung</a>
+                    <a href="#">Zusatzqualifikationen</a>
+                    <a href="../../Fächerwahl/Fächerwahl.html">Fächerwahl</a>
+                </div>
+                </div> 
+        <li><a href="https://www.boerde-berufskolleg.de/wir-ueber-uns/kollegium/">Kollegium</a>
+        <li><div class="dropdown">
+            <a class="dropdowntn" href="https://www.boerde-berufskolleg.de/aktuelles/">Aktuelles</a>
+            <div class="dropdown-content">
+                <a href="../../Zeitungsartikel/Zeitungsartikel.html">Börde-Zeitung</a>
+            </div>
+        </div>
+        <li><div class="dropdown">
+            <a class="dropbtn" href="https://www.boerde-berufskolleg.de/schulleben/">Schulleben</a>
+            <div class="dropdown-content">
+                <a href="https://www.boerde-berufskolleg.de/schulleben/europa/">Europa</a>
+                <a href="https://www.boerde-berufskolleg.de/schulleben/medienscouts/">Medienscouts</a>
+                <a href="../Frontsite.html">Steckbriefe</a>
+            </div>
+            </div> 
+        <li><a href="https://bbk-schulkleidung.company.site/">Shop</a>
+        <li><a href="https://www.boerde-berufskolleg.de/service-download/">Sevice & Download</a>
+    </ul>
+    <a class="social" href="https://www.instagram.com/bbk_soest/" target="_blank"><img class="ico" src="https://allfacebook.de/wp-content/uploads/2020/02/ig-icon.png" alt="Instagram"></a>
+</nav>
+<a class="floating_btn" href="../Frontsite.html">Zurück zur Übersicht</a> 
+
+*/
+
+* {
+    box-sizing: border-box;
+
+    font-family: Questrial;
+
+    -webkit-user-drag: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar start */
+nav li, nav a, nav ul li a div a  {
+    font-family: Questrial, Arial;
+    font-size: 18px;
+    font-weight: 5;
+    color: #ecf0f1;
+    background-color: #282828;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding-top: 28px;
+    background-color: #282828;
+    z-index: 9999;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav, nav li.a, nav li.div{
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    height: 75px;
+    background-color: #282828;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    -webkit-user-drag: none;
+    user-select: none;
+    z-index: 1000;
+}
+
+.logo {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-color: #282828;
+}
+
+.nav_link {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav_link li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link li a {
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+a.social {
+    padding: 9px 25px;
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: default;
+}
+
+img.ico {
+    margin-left: 124px;
+    width: 26px;
+    height: 26px;
+    background: #282828;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+}
+.dropdown-content a:hover {
+    background-color: #494949;
+}
+.nav_link li a:hover {
+    color: #B3071B;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: #B3071B;
+}
+@media screen and (max-width: 1603px) {
+    img.ico {margin-left: 0;}
+    nav {padding-left: 25px;}
+}
+@media screen and (max-width: 1360px) {
+    nav {display: none;}
+    .menu-btn {display: block}
+}
+/* Navbar end */
+
+.floating_btn {
+    position: fixed;
+    right: 1em;
+    bottom: 2em;
+
+    padding: 20px;
+    border-radius: 100vw;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-color: #b3071b;
+    color: white;
+
+    z-index: 999;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.floating_btn:hover {
+    transform: scale(1.03);
+    transition: all 0.3s  ease-out;
+}
+
+main {
+    margin: 8px;
+    padding: 8px;
+}
+
+/* Scroll to top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 45px;
+    z-index: 998;
+    border: none;
+    outline: none;
+    background-color: #b3071b;
+    cursor: pointer;
+    padding: 22px;
+    font-size: 20px;
+    border-radius: 100vw;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#myBtn:hover {
+    font-size: 26px;
+    transform: scale(1.2);
+    transition: all 0.1s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}

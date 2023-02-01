@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Online Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/navbar.css">
+</head>
+<body class="preload" id="body top">
+    <header>
+        <nav>
+            <a id="nav__logo" href="#top">Marius</a>
+            <div>
+                <ul class="nav__container">
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#works" class="nav__link">Works</a></li>
+                    <li><a href="#collection" class="nav__link">Collection</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="fragments__container desktop">
+                <div class="fragment"></div>
+                <div class="fragment"></div>
+                <div class="fragment"></div>
+                <div class="fragment"></div>
+            </div>
+            <div class="content fade-hiddenOnce" onContextMenu="return false;">
+                <h3>Hey, my name is Marius and I'm Interested in</h3>
+                <img class="desktop" src="assets/images/LogoDesktop.png" alt="Webdesing & development">
+                <wrapper class="mobile">
+                    <div class="rotate">
+                        <p>Web</p>
+                        <div class="words">
+                            <span>design</span>
+                            <span>development</span>
+                            <span>design</span>
+                            <span>development</span>
+                            <span>design</span>
+                        </div>
+                    </div>
+                </wrapper>
+            </div>
+            <div class="scroll__down">
+                <a href="#works">
+                    <span class="mouse">
+                        <span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </section>
+        <section id="works" class="darkbg">
+            <h1>Works</h1>
+            <p>Showcasing My Biggest Projects - A Look into My Design Process and Skills</p>
+            <div class="cursor-follower" id="cursor"><img src="assets/images/icons/Group 31cursormore.png" alt=""></div>
+            <div class="projects__container mrgn-top-bot">
+                <div class="project fade-hidden">
+                    <a href="../case studies/dübel/index.html">
+                        <img src="assets/images/Screenshot 2023-01-06 171042.JPG" alt="project Thumbnail">
+                        <div class="nr__line">
+                            <p>01</p>
+                            <div class="line"></div>
+                        </div>
+                            <div class="content">
+                            <h3>"Zum Dübel" Fictional Coffee Shop Homepage</h3>
+                            <p class="description">Designed and developed a homepage with an integrated, but not functional webshop for a fictional coffee shop. I focused on highlighting the unique atmosphere and offerings of the shop</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project fade-hidden">
+                    <a href="../case studies/fsbrennholz/index.html">
+                        <img src="assets/images/Screenshot 2023-01-06 171005.JPG" alt="project Thumbnail">
+                        <div class="nr__line">
+                            <p>02</p>
+                            <div class="line"></div>
+                        </div>
+                            <div class="content">
+                            <h3>"FS Brennholz" Firewood Dealership Concept Website</h3>
+                            <p class="description">Worked with two friends to create a concept website for their firewood dealership. The website includes their services and contact information</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project fade-hidden">
+                    <a href="../case studies/börde/index.html">
+                        <img src="assets/images/Bewerbungsfoto groß.JPG" alt="project Thumbnail">
+                        <div class="nr__line">
+                            <p>03</p>
+                            <div class="line"></div>
+                        </div>
+                            <div class="content">
+                            <h3>Börde-Berufskolleg Homepage Redesign</h3>
+                            <p class="description">
+                                Modernized the look and user experience of the school's landing page as part of a school project, focusing on simplicity and ease of navigation.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="collection" class="mrgn-top-bot">
+            <h1>Collection</h1>
+            <p>A Collection of My Web Design and Development Projects</p>
+            <div class="filter__card__wrapper">
+                <div class="filter">
+                    <h4>Filter</h4>
+                    <div id="buttons">
+                        <button class="btn" onclick="filterObjects('all')">Show All</button>
+                        <button class="btn" onclick="filterObjects('school')">School</button>
+                        <button class="btn" onclick="filterObjects('practice')">Practice</button>
+                        <button class="btn" onclick="filterObjects('design')">Design</button>
+                        <button class="btn" onclick="filterObjects('unfinished')">Unfinished</button>
+                        <button class="btn" onclick="filterObjects('other')">Other</button>
+                    </div>
+                </div>
+                <div class="wrapper">
+                        <div class="projects">
+                            <div class="project__card school design">
+                                <div class="card__head">
+                                    <h5>Börde Newspage</h5>
+                                </div>
+                                <img src="assets/images/BördeZeitung.png" alt="thumbnail">
+                                <div class="tag__container">
+                                    <div class="tag" tag="school">School</div>
+                                    <div class="tag" tag="design">Design</div>
+                                </div>
+                                <hr>
+                                <div class="card__text">
+                                    <p>Website of an online edition of the fictitious school newspaper and my first experiences with javaScript and grid layout.</p>
+                                </div>
+                            </div>
+                            <div class="project__card school other">
+                                <div class="card__head">
+                                    <h5>Schoolpage clone</h5>
+                                    <a href="../case studies/börde/index.html"><img src="assets/images/icons/open_in_new _black.png" alt="open in new tab"></a>
+                                </div>
+                                <img src="assets/images/Bewerbungsfoto groß.JPG" alt="thumbnail">
+                                <div class="tag__container">
+                                    <div class="tag" tag="school">School</div>
+                                    <div class="tag" tag="other">Other</div>
+                                </div>
+                                <hr>
+                                <div class="card__text">
+                                    <p>Modernized the look and user experience of the school's landing page, making my first foto slide in JavaScript.</p>
+                                </div>
+                            </div>
+                            <div class="project__card school design">
+                                <div class="card__head">
+                                    <h5>Coffeeshop Homepage</h5>
+                                    <a href="../case studies/dübel/index.html"><img src="assets/images/icons/open_in_new _black.png" alt="open in new tab"></a>
+                                </div>
+                                <img src="assets/images/Screenshot 2023-01-06 171042.JPG" alt="thumbnail">
+                                <div class="tag__container">
+                                    <div class="tag" tag="school">School</div>
+                                    <div class="tag" tag="design">Design</div>
+                                </div>
+                                <hr>
+                                <div class="card__text">
+                                    <p>Designed and developed a homepage with an integrated, but not functional webshop for a fictional coffee shop.</p>
+                                </div>
+                            </div>
+                            <div class="project__card practice">
+                                <div class="card__head">
+                                    <h5>News Homepage</h5>
+                                    <a href="https://www.frontendmentor.io/solutions/news-homepage-frontend-mentor-G2ttFmYz7w" target="_blank"><img src="assets/images/icons/open_in_new _black.png" alt="open in new tab"></a>
+                                </div>
+                                <img src="assets/images/NewsHomepageFrontendMentor.png" alt="thumbnail">
+                                <div class="tag__container">
+                                    <div class="tag" tag="practice">Practice</div>
+                                </div>
+                                <hr>
+                                <div class="card__text">
+                                    <p>Frontend Mentor Challenge for responsive grid layout.</p>
+                                </div>
+                            </div>
+                            <div class="project__card practice">
+                                <div class="card__head">
+                                    <h5>Countdown Timer</h5>
+                                    <a href="https://www.frontendmentor.io/solutions/launch-countdown-timer-u-Wh--hY_8" target="_blank"><img src="assets/images/icons/open_in_new _black.png" alt="open in new tab"></a>
+                                </div>
+                                <img src="assets/images/CountdownTimer.png" alt="thumbnail">
+                                <div class="tag__container">
+                                    <div class="tag" tag="practice">Practice</div>
+                                </div>
+                                <hr>
+                                <div class="card__text">
+                                    <p>Frontend Mentor Challenge for a website with working countdown. Made possible with JavaScript.</p>
+                                </div>
+                            </div>
+                            <div class="project__card practice">
+                                <div class="card__head">
+                                    <h5>Advice Generator</h5>
+                                    <a href="https://www.frontendmentor.io/solutions/advice-generator-3TeQZj38ZK" target="_blank"><img src="assets/images/icons/open_in_new _black.png" alt="open in new tab"></a>
+                                </div>
+                                <img src="assets/images/AdiveGenerator.png" alt="thumbnail">
+                                <div class="tag__container">
+                                    <div class="tag" tag="practice">Practice</div>
+                                </div>
+                                <hr>
+                                <div class="card__text">
+                                    <p>Frontend Mentor Challenge: Fairly simple, but my first point of contact when using apis and JavaScript.</p>
+                                </div>
+                            </div>
+                            <div class="project__card practice">
+                                <div class="card__head">
+                                    <h5>Product Preview Card</h5>
+                                    <a href="https://www.frontendmentor.io/solutions/parfume-product-preview-card-ZtNf1tSZQg" target="_blank"><img src="assets/images/icons/open_in_new _black.png" alt="open in new tab"></a>
+                                </div>
+                                <img src="assets/images/ProductPreviewCard.png" alt="thumbnail">
+                                <div class="tag__container">
+                                    <div class="tag" tag="practice">Practice</div>
+                                </div>
+                                <hr>
+                                <div class="card__text">
+                                    <p>Frontend Mentor Challenge for designing a product prewiev card with HTML & CSS.</p>
+                                </div>
+                            </div>
+                            <div class="project__card other unfinished">
+                                <div class="card__head">
+                                    <h5>FS Brennholz Concept</h5>
+                                    <a href="../case studies/fsbrennholz/index.html"><img src="assets/images/icons/open_in_new _black.png" alt="open in new tab"></a>
+                                </div>
+                                <img src="assets/images/Screenshot 2023-01-06 171005.JPG" alt="thumbnail">
+                                <div class="tag__container">
+                                    <div class="tag" tag="other">Other</div>
+                                    <div class="tag" tag="unfinished">Unfinished</div>
+                                </div>
+                                <hr>
+                                <div class="card__text">
+                                    <p>Concept website for a local firewood dealership. The website includes the companies services and contact information.</p>
+                                </div>
+                            </div>
+                            <div class="project__card practice design">
+                                <div class="card__head">
+                                    <h5>Abstract Clone</h5>                                </div>
+                                <img src="assets/images/Abstract.png" alt="thumbnail">
+                                <div class="tag__container">
+                                    <div class="tag" tag="practice">Practice</div>
+                                    <div class="tag" tag="design">Design</div>
+                                </div>
+                                <hr>
+                                <div class="card__text">
+                                    <p>Clone of the Abstract.com website as a part of a "Frontend Practice" Challenge.</p>
+                                </div>
+                            </div>
+                            <div class="project__card practice design">
+                                <div class="card__head">
+                                    <h5>Instrument Clone</h5>                                </div>
+                                <img src="assets/images/Instrument.png" alt="thumbnail">
+                                <div class="tag__container">
+                                    <div class="tag" tag="practice">Practice</div>
+                                    <div class="tag" tag="design">Design</div>
+                                </div>
+                                <hr>
+                                <div class="card__text">
+                                    <p>Clone of the Instrument.com website as a part of a "Frontend Practice" Challenge.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="darkbg">
+        <h4>Marius</h4>
+        <a class="scrolltop" href="#home" title="Scroll to top">
+            <img src="assets/images/icons/keyboard_double_arrow_up.svg" alt="">
+        </a>
+    </footer>
+    <script src="assets/main.js"></script>
+</body>
+</html>

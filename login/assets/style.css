@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Mono", monospace;
+    
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+:root {
+    --borderColor : gray;
+    --white: white;
+    --border: 2px solid rgb(65, 65, 65);
+    --success: rgb(26, 163, 26);
+    --error: rgb(233, 47, 47);
+    --hover: rgb(4, 4, 134);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: var(--white);
+    background: linear-gradient(0deg, rgba(1, 0, 24, 0.651), rgba(1, 0, 26, 0.671)),
+                radial-gradient(37.69% 35.5% at 50% 50%, rgba(255, 255, 255, 0.11) 0%, rgba(255, 255, 255, 0) 100%);
+    background-color: rgba(1, 0, 32, 0.562);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+h1 {
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+#form {
+    display: flex;
+    position: relative;
+    border-radius: 100px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#form #show,
+#form button {
+    position: absolute;
+    top: 50%;
+    height: 32px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#show {
+    right: 96px;
+    cursor: pointer;
+}
+
+#show.active {
+    filter: brightness(0.5);
+}
+
+input {
+    all: unset;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -47px;
+    padding: 27px 2em 25px 1em;
+    border-radius: 0 100px 100px 0;
+    border: var(--border);
+    color: var(--white);
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hover);
+}
+
+input#password {
+    padding: 1em 2em;
+    width: clamp(270px, 30vw, 400px);
+    border-radius: 100px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(17, 17, 17, 0.952);
+    color: var(--white);
+    border: var(--border);
+    outline: none;
+}
+
+#password::placeholder {
+    color: var(--white);
+}
+
+.status {
+    display: block;
+    height: 20px;
+    padding-top: 1em;
+    font-weight: 600;
+}
+
+#error {
+    color: var(--error);
+}
+
+#success {
+    color: var(--success);
+}
+
+#hint {
+    font-weight: 300;
+    animation: fadein 2s;
+}
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+.success {
+    background-color: var(--success);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    padding-top: 280px;
+}
+
+main *:not(video) {
+    position: relative;
+    z-index: 999;
+}
+
+video {
+    width: 75%;
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+    max-width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 1440px) {
+    video{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    video {
+        width: 150%;
+        top: 220px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    video {
+        display: none;
+    }
+    main {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(images/0001.png);
+    }
+}

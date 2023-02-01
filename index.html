@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Online Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+    <link rel="stylesheet" href="login/assets/style.css">
+</head>
+<body>
+    <main>
+        <h1>Unlock to see the Portfolio</h1>
+        <form id="form" onsubmit="return false">
+                <input type="password" id="password" placeholder="Enter Password" oninput="hideMessages()" required>
+                <img id="show" class="active" src="login/assets/images/eyeicon.svg" alt="show / hide Password" onclick="showHidePassword()">
+                <button class="button" id="submit" type="button" value="Unlock" onclick="login()">Unlock</button>
+            </form>
+            <div class="status" id="status">
+                <p class="hide" id="error">Wrong Password!</p>
+                <p class="hide" id="success">Success! You will soon be redirected!</p>
+                <i><p class="hide" id="hint">The Password can be found in your email.</p></i>
+            </div>
+            <video id="lockVideo" src="login/assets/videos/lock.webm"></video>
+        </main>
+    <script src="login/assets/app.js"></script>
+</body>
+</html>
