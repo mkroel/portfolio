@@ -45,7 +45,7 @@ function success() {
 }
 
 function redirect() {
-    window.location.href = "portfolio/portfolio/portfolio.html"
+    window.location.href = "/portfolio/portfolio.html"
 }
 
 function error() {
